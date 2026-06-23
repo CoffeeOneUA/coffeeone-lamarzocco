@@ -82,12 +82,12 @@ header{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:78px;}
 .logo{display:flex;align-items:center;gap:16px;margin-right:40px;}
-.brand-mark{display:flex;align-items:baseline;gap:10px;line-height:1;};align-items:flex-start;}
+.brand-mark{display:flex;flex-direction:column;line-height:1;align-items:flex-start;}
 .brand-logo{display:block;height:24px;width:auto;color:var(--red);align-self:flex-start;}
 .brand-logo--sm{height:19px;}
 .brand-sub{
   font-family:var(--mono);font-size:8.5px;letter-spacing:2.5px;
-  text-transform:uppercase;color:var(--ink-soft);margin-top:0px;
+  text-transform:uppercase;color:var(--ink-soft);margin-top:5px;
 }
 .distributor-tag{
   font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;
@@ -871,7 +871,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 /* ===================== contact form ===================== */
 /* >>> Встав сюди URL вебхука (Make / Zapier / n8n / Google Apps Script / власний бекенд).
        Якщо лишити порожнім — форма покаже успіх, але дані нікуди не підуть (режим прев'ю). <<< */
-const WEBHOOK_URL = "https://hook.eu2.make.com/7w8uflq0qui1nm6mh7utu0mho4gg43bn";
+const WEBHOOK_URL = "";
 
 const fName=document.getElementById('fName');
 const fPhone=document.getElementById('fPhone');
